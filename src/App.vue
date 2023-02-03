@@ -1,9 +1,17 @@
 <script setup lang="ts">
 import HelloWorld from "@/components/HelloWorld.vue";
+import { ref } from "vue";
+import zhCn from "element-plus/dist/locale/zh-cn.mjs";
+import { ElConfigProvider } from "element-plus";
+
+const locale = ref(zhCn);
 </script>
 
 <template>
-  <HelloWorld msg="" />
+  <el-config-provider :locale="locale">
+    <HelloWorld msg="" />
+    <ElButton>button</ElButton>
+  </el-config-provider>
 </template>
 
 <style scoped>

@@ -11,6 +11,7 @@
     "lint:lint-staged": "lint-staged"
   },
   "dependencies": {
+    "element-plus": "^2.2.28",
     "vue": "^3.2.45"
   },
   "devDependencies": {

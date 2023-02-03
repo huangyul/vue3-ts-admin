@@ -29,5 +29,8 @@ export default defineConfig(({ command, mode }: ConfigEnv): UserConfig => {
     define: {
       __TEST_CONST__: JSON.stringify(pkg),
     },
+    optimizeDeps: {
+      include: ["element-plus/dist/locale/zh-cn.mjs"],
+    },
   };
 });
