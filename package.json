@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "element-plus": "^2.2.28",
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.2",
